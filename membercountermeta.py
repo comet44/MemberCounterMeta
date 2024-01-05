@@ -52,10 +52,10 @@ async def main_MemberCounterMeta():
                             days, seconds_remaining = divmod(total_seconds, 86400)
                             hours, seconds_remaining = divmod(seconds_remaining, 3600)
                             minutes, seconds = divmod(seconds_remaining, 60)
-                        countdown_message = (f"🌀**COUNTDOWN FOR NEET 2024 to 5 May, 2024** \n\n **Time Left**: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds \n\n  \n\n <i>♻️ Refreshes automatically  </i>")
+                        countdown_message = (f"**🥀COUNTDOWN FOR NEET 2024 to 5 May, 2024** \n\n **Time Left**: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds \n\n <i>♻️ Refreshes automatically Every 30 Min \n\n 🍂 By : @Goatinthechat  </i>")
                         await MemberCounterMeta.edit_message_text(int(BOT_CHANNEL_OR_GROUP_ID), C_MESSAGE_ID, countdown_message)
                         print(f"COUNTDOWN FOR NEET 2024 to 5 May, 2024 \n\n Time Left: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds \n\n  ")
-                        await asyncio.sleep(10)  # 15 minutes = 900 seconds # 15 minutes = 900 seconds
+                        await asyncio.sleep(1800)  # 15 minutes = 900 seconds # 15 minutes = 900 seconds
                     except FloodWait as e:
                         await asyncio.sleep(e.x)
         except Exception as e:
