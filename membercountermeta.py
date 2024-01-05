@@ -38,11 +38,7 @@ async def main_MemberCounterMeta():
                     try:
                         time = datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                         last_update = time.strftime(f"%Y-%m-%d %H:%M:%S")
-                        xxx_teletips += f"\n\n⌛️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Refreshes automatically Every 45 Minutues</i>"
-                        await MemberCounterMeta.edit_message_text(int(BOT_CHANNEL_OR_GROUP_ID), BOT_MESSAGE_ID, xxx_teletips)
-                        print(f"Last checked on: {last_update}")
-                        await MemberCounterMeta.send_message(int(bot_admin_id), f"Last checked on: {last_update}")
-                        await asyncio.sleep(7)
+                        await asyncio.sleep(1)
                         print(f"trying to do countdown")
                         desired_timezone_c = 'Asia/Kolkata'
                         target_date = datetime(2024, 5, 4, 23, 59, 59 , tzinfo=pytz.timezone(desired_timezone_c))
